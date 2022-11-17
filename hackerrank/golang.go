@@ -15,7 +15,7 @@ if v1>v2 && (x2-x1)%(v1-v2)==0{
     return "NO"
 
 //https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?isFullScreen=true&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
-
+// my answer true
 func divisibleSumPairs(n int32, k int32, ar []int32) int32 {
     // Write your code here
     var ans int32
