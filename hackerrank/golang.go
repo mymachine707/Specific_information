@@ -33,3 +33,32 @@ func divisibleSumPairs(n int32, k int32, ar []int32) int32 {
 }
 
 
+
+// https://www.hackerrank.com/challenges/day-of-the-programmer/problem?isFullScreen=true
+// kabisa yili
+func dayOfProgrammer(year int32) string {
+    // Write your code here
+    var ans string
+    var a7 int32 = 215
+    var res int32
+    var f int32 = 28
+    if year<1918 {
+        if year%4==0{
+            f=29
+        }
+    }
+    if year==1918 {
+        return "26.09.1918"
+    }
+    if year>1918 {
+        if year%400==0 || (year%4==0 && year%100!=0){
+            f=29
+        }
+    }
+    
+    res=a7+f
+    res=256-res
+    
+    ans = strconv.Itoa(int(res))+".09."+strconv.Itoa(int(year))
+    return ans
+}
