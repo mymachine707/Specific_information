@@ -1,3 +1,19 @@
 // git ssh key set up 
 
 https://jhooq.com/github-permission-denied-publickey/
+
+
+// problem
+
+islombek-oripov@my-machine-707:~/.go/src/Specific_information$ git push
+Username for 'https://github.com':          
+Password for 'https://github.com': 
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/mymachine707/Specific_information.git/'
+
+
+// answer
+
+git remote set-url origin git@github.com:mymachine707/Specific_information.git
+
+// ssh bilan remote set url qilish kereyikan
